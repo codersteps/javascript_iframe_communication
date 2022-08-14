@@ -9,8 +9,58 @@
     <script src="/js/iframe.js"></script>
   </head>
   <body>
-    <form>
-      <h1 class="text-3xl font-bold">Register users iframe</h1>
+    <form name="registration" class="p-3">
+      <h1 class="text-4xl capitalize text-center mb-5 font-bold">
+        Register users iframe
+      </h1>
+
+      <div class="space-y-3 mb-3">
+        <label class="block space-y-1">
+          <strong class="text-sm text-gray-700">First Name</strong>
+          <input
+            name="firstname"
+            placeholder="First Name"
+            type="text"
+            class="w-full py-1.5 px-4 border border-gray-300"
+          />
+        </label>
+        <label class="block space-y-1">
+          <strong class="text-sm text-gray-700">Last Name</strong>
+          <input
+            name="lastname"
+            placeholder="Last Name"
+            type="text"
+            class="w-full py-1.5 px-4 border border-gray-300"
+          />
+        </label>
+        <div class="md:flex md:space-x-3">
+          <label class="block md:w-1/2 space-y-1">
+            <strong class="text-sm text-gray-700">Email</strong>
+            <input
+              name="email"
+              placeholder="Email"
+              type="email"
+              class="w-full py-1.5 px-4 border border-gray-300"
+            />
+          </label>
+          <label class="block md:w-1/2 space-y-1">
+            <strong class="text-sm text-gray-700">Password</strong>
+            <input
+              name="password"
+              placeholder="Password"
+              type="password"
+              class="w-full py-1.5 px-4 border border-gray-300"
+            />
+          </label>
+        </div>
+      </div>
+
+      <button
+        type="submit"
+        class="w-40 bg-white px-4 py-3 border border-gray-300 hover:border-gray-500"
+      >
+        Register
+      </button>
     </form>
   </body>
 </html>
